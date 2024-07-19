@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 2 html</title>
+</head>
+<body>
+    <!-- 
+    1. các thuộc tính trong ô input
+        + placeholder: gợi ý cho người dùng nhập
+        + vaue : giá trị người dùng nhập trong ô input
+    2. thẻ button trong form
+        + tạo nút bấm để gửi dữ liệu
+        + mặc định khi nhấn vào button trong form thì dữ liệu sẽ được gửi lên server
+    3. thẻ select-option
+        + chọn giá trị trong nhiều sự lựa chọn
+    4. text area
+        + tạo một ô nhập dữ liệu
+    
+    -->
+    <form action="" >
+        <label for="">userName</label>
+        <input autocomplete="off" id="userName" type="text" placeholder=" mời nhập tên" value="Nguyễn văn a">
+        <br>
+        <!-- autocomplete="off"/on hiện lịch sử đã nhập hoặc tắt -->
+        <label for="">password</label>
+        <input type="password"><br>
+
+        <select>
+            <option>Tỉnh</option>
+            <option>Hà Nội</option>
+            <option>Hải Phòng</option>
+            <option>Nam Định</option>   
+        </select><br>
+
+        <textarea name="" id="" rows="5" cols="20"></textarea>
+        <button disabled>login</button>
+
+
+    </form>
+</body>
+</html>

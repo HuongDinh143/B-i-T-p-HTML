@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form html</title>
+</head>
+<body>
+    
+    <!-- 
+    nội dung buổi học
+    1. Ý nghĩa tác dụng của sử dụng form
+        +form là một biểu mãu dùng để thu thập thông tin gửi lên server
+        VD: form đăng ký, đăng nhập, form lấy thông tin khảo sát chất lượng đào tạo
+    2. Các thuộc tính cơ bản của form
+        - action: địa chỉ server (nơi nhập dữ liệu)
+        - method: phương thức gửi dữ liệu
+            + phương thức POST :
+            + phương thức GET :
+    3. Các thẻ hay sử dụng trong form
+        + input : là ô cho người dùng nhập dữ liệu
+            Các giá trị của thuộc tính type:
+            - type = text : đâu là giá trị ban đầu của ô input, có thể nhập mọi dữ liệu
+            - type = password : ẩn khi đánh password
+            - type = radio: chọn một trong nhiều cái
+             + các ô input có thuộc tính type = radio, nếu có thuộc tính name = giá trị giống nhau 
+                thì sẽ chỉ chọn được một giá trị
+             + name là gì? là thuộc tính (CSS, lấy dữ liệu, gửi dữ liệu lên server)
+            - type = checkbox : chọn nhiều giá trị trong các giá chị có sẵn
+            - type = email : khi nhập vào ô giá trị phải đúng định dạng email
+            - type = date : chọn ngày tháng năm
+            - type = time : chọn giờ
+            - type = color : chọn màu
+            - type = range : chọn tiến trình
+            - type = month : chọn tháng
+            - type = week : tuần
+            - type = search : hiển thị tích clear giá trị ô search
+            - type = number : nhập số
+
+        + label: khi giá trị của thuộc tính for trong label bằng giá trị củ thuộc tính id trong 
+        ô input thì khi click vào thẻ label sẽ tự focus vào ô input
+        thuộc tính id là định danh thẻ (element)
+    4. Sử dụng thẻ button
+    5. Sử dụng thẻ textarea
+    6. Sử dụng select-option
+    
+    -->
+    <!-- 
+    vd: tạo một form cho người dùng đăng ký
+     + yêu cầu nhập các thông tin
+      - email
+      - số điện thoại
+      - tên đăng nhập
+      - mật khẩu
+      - confirm mật khẩu
+    -->
+    <form action="">
+        <label for="email">email</label>
+        <input id="email" type="text"><br>
+        <label for="">mật khẩu</label>
+        <input type="password"><br>
+
+        <input type="radio" name="test">A
+        <input type="radio" name="test">B
+        <input type="radio" name="test">C
+        <input type="radio" name="test">D
+
+        <input type="checkbox">
+        <input type="checkbox">
+
+        <span>type=email</span>
+        <input type="email"><br>
+
+        <span>type=date</span>
+        <input type="date"><br>
+
+        <span>type=time</span>
+        <input type="time"><br>
+
+        <span>type=color</span>
+        <input type="color"> <br>
+
+        <span>type=range</span>
+        <input type="range"> <br>
+
+        <span>type = month</span>
+        <input type="month"><br>
+
+        <span>type=week</span>
+        <input type="week"><br>
+
+        <span>type=search</span>
+        <input type="search"> <br>
+
+        <span> type = number</span>
+        <input type="number">
+
+
+
+        
+        <button>register</button>
+
+    </form>
+</body>
+</html>
