@@ -1,0 +1,71 @@
+h1{
+    color: #0bf40b;
+    background-color: #dbdb;
+    text-align: right;
+}
+p{
+    font-size: 50px;
+    /*
+    comment trong css
+    px: đơn vị css
+    rem, em,%, vh,vw...
+    responsive
+    */
+    font-weight: 900;
+    font-family:'Times New Roman', Times, serif;
+}
+a{
+    text-decoration:line-through;
+}
+div{
+    text-transform:capitalize;
+}
+.background{
+    background-color: red;
+}
+body{
+    height: 100vh;
+    background-image: url(../../image/bgimg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+     /*
+    background-size: cover: full màn hình
+    */
+}
+.display{
+    display: none;
+}
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.div2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+
+}
+.div{
+    display: inline-block;
+}
+.test{
+    background-color: aqua;
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+.box-model{
+    width: 150px;
+    height: 100px;
+    background-color: tomato;
+    /*padding: 5px; cả 4 hướng*/
+    /* padding: 5px 10px; */
+    /*trên dưới 5, trái phải 10*/
+    /* padding: 5px 10px 15px; */
+    /* tren 5, trai phai 10, duoi 15 */
+    padding: 5px 10px 15px 20px;
+    /* tren 5, phai 10, duoi 15, trai 20 */
+    border: 5px solid black;
+    margin: 5px;
+}

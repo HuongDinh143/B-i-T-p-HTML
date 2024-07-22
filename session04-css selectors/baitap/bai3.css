@@ -1,0 +1,38 @@
+.header {
+    background-image: url(./image/1658643389238.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: auto;
+}
+h1 {
+    font-size: 70px;
+    color: hwb(249 9% 47%);
+}
+#navbar {
+    border-bottom: 1px; 
+}
+#navbar a {
+    text-decoration: none;
+    padding-right: 20px;
+    margin: auto;
+}
+.main {
+    background-color: #f4f0f1;
+    margin: auto;
+    padding: 20px;
+}
+.main a {
+    text-decoration: dotted;
+    
+}
+.main ul {
+    list-style: circle;
+    color: black;
+}
+.footer{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}

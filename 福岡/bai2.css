@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+}
+nav{
+    text-align: center;
+    
+    padding: 10px;
+}
+table{
+
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+}
+hr{
+    width: 50px;
+    color: rgb(14, 174, 174);
+    text-align: center;
+}       

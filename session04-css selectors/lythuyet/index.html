@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        h2 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    CSS là gì?
+        + viết tắt cascading style sheets (Ngôn ngữ làm đẹp cho trang web)
+        + khi viết file CSS thì đuôi phải .css
+    • Nhúng được CSS vào trang web
+        + có 3 cách nhúng css vào trang web
+        1. inline : viết css trực tiếp vào thẻ tag (element) luôn
+        2. internal : viết css bên trong cặp thẻ style và cặp thẻ style nên đặt ở trong phần head
+        3. external : viết css bên trong file có đuôi .css
+        rút ra ƯU ĐIỂM, NHƯỢC ĐIỂM của 3 cách
+        1. inline : nhanh, nhưng có nhược điểm là khi code nhiều thì nhìn code sẽ rối
+        2. internal : cấu trúc gọn gàng hơn, nhưng có nhược điểm là chỉ mình file html đó dùng được thôi
+        các html khác không dùng được
+        3. external : viết code css rõ ràng, dể maintain (chỉnh sửa) và có thể cho các file html khác
+        dùng chung css được. nhược điểm mất công tạo file, link file
+    • Sử dụng được CSS selector
+        selector : chộ chọn để css
+        định danh cho các element:
+        + class : cách dùng .tên class: có thể dùng chung được
+        + id : cách dùng . tên id định danh duy nhất, khi dùng rồi sẽ không dùng lại được nữa
+        + 1 element có thể có nhiều tên class
+
+        + mức độ ưu tiên ở trong css
+        element ==> class ==>> id  ==> !important
+    • Sử dụng được CSS để tuỳ chỉnh văn bản
+    • Giải thích được Box Model
+    • Trình bày được mô hình hộp (box model) trong CSS
+    • Sử dụng được CSS để điều chỉnh kích thước các thành phần
+    • Sử dụng được CSS tạo layout đơn giản
+    
+    
+    -->
+    <h1 style="color: red;">CSS basic!</h1>
+    <h2>CSS internal</h2>
+    <h3 class="heading1" id="content1">CSS external</h3>
+    <h3>Lorem, ipsum dolor</h3>
+    <div class="main1 main3">content1</div>
+    <div class="main2">content2</div>
+    <button class="btl login">login</button>
+    <button class="btl register">register</button>
+    <div class="mail">
+        <div class="main_product-hot"></div>
+        <!-- danh sách sản phẩm hot -->
+        <div class="mail_product"></div>
+        <!-- danh sách sản phẩm -->
+    </div>
+    <h6 class="study-code" id="study">Học lập trình tại rikkeiacademy</h6>
+    <div class="container">
+        <p>Xin chào</p>
+    </div>
+    <p>Tạm biệt</p>
+
+    <h5>css basic</h5>
+    <section>rekkeiacademy</section>
+    <aside>hello</aside>
+</body>
+</html>

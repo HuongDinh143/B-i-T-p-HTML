@@ -1,0 +1,27 @@
+
+.mondal1{
+    box-sizing: border-box;
+    border-style: solid;
+}
+#p1{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px;
+}
+#p2{
+    box-sizing: border-box;
+    border: 2px solid rgba(80, 46, 13, 0.144);
+    border-width: 100%;
+    padding: 20px;
+    margin-left: 0%;
+}
+.button{
+    background-color: #2978f8;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;  
+    margin-left: 1300px;
+    margin-block-end: 10px;
+
+}

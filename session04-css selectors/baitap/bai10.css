@@ -1,0 +1,47 @@
+form{
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px;
+    width: 800px;
+}
+
+.name{
+    display: inline-block;
+   
+}
+
+button{
+    display: block;
+    background-color: #2d4bde;
+    color: white;
+    width:780px;
+    height: 40px;
+    margin: 10px;
+}
+.input1{
+    display: block;
+    width: 380px;
+    height: 35px;
+}
+.input2{
+    display: block;
+    width: 760px;
+    height: 35px;
+}
+.add{
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+}
+.ex{
+    display: block;
+    width: 200px;
+    height: 30px;
+}
+#cvv{
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+}
