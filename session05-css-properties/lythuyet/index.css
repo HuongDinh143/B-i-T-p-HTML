@@ -1,0 +1,57 @@
+.opacity{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+    opacity: 0;
+}
+.border-radius{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    border-radius: 25px;
+}
+.box-shadow{
+    width: 80px;
+    height: 80px;
+    background-color: #dbdbdb;
+    box-shadow: 10px 5px 20px 10px red;
+}
+h1{
+    text-shadow: 2px 2px #ff0000
+}
+.gradient{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right, green, red, violet, yellow)
+}
+.position{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    position:static
+}
+.position-relative{
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    background-color: red;
+    position:relative;
+    left: 50px;
+    bottom:50px;
+}
+.parent{
+    width: 500px;
+    height: 500px;
+    background-color: #dbdbdb;
+    position: relative;
+}
+.position-absolute{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: blue;
+    position: absolute;
+    bottom: 37%;
+    right: 37%;
+}

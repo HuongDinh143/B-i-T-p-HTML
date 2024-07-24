@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation{
+            width: 60px;
+            height: 60px;
+            border: 10px solid orange;
+            border-radius: 50%;
+            margin: 50px;
+            border-right: 10px solid green;
+            border-left: 10px solid violet;
+            border-bottom: 10px solid aqua;
+            animation:cycle 1s infinite 1s ease-in-out;
+            /* infinite: chạy liên tục không dừng
+            nếu muốn chạy mấy vòng thêm chỉ số vào vd 3 */
+        }
+        @keyframes cycle {
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    animation : chuyển động
+    -->
+    <div class="animation">
+        
+    </div>
+</body>
+</html>

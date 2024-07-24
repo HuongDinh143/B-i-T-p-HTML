@@ -1,0 +1,15 @@
+ul{
+    list-style: circle;
+    font-size: 35px;
+}
+li:hover{
+    color: red;
+}
+div{
+    display: block;
+    background-color: #b0c6f4d5;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+
+}

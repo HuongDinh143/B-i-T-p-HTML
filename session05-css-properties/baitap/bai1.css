@@ -1,0 +1,13 @@
+div{
+    display:block;
+    background-color: bisque;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: auto;
+}
+
+input[type=text]:focus{
+    background-color: yellow;
+    outline: none;
+}
