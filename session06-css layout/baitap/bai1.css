@@ -1,0 +1,29 @@
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxed{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.boxed1{
+    background-color: red;
+    border-radius: 10px;
+}
+.boxed2{
+    background-color: rgb(0, 0, 255);
+    border-radius: 50%;
+}
+.boxed3{
+    background-color: brown;
+    border-radius: 10px;
+}

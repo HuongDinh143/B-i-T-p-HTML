@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>session 06</title>
+    <style>
+        .container{ 
+            width: 600px;
+            height: 500px;
+            background-color: #dbdbdb;
+            display:flex;
+            flex-direction: row;/* hướng main-axios */
+            flex-wrap: wrap;/* Khi mà chiều rộng của phần tử con vượt quá độ rộng của cha thì tự động xuống dòng*/
+            align-content: space-evenly;
+            /* justify-content: space-between;/* điều hướng trục main-axios */
+            /* align-items: flex-start;(hướng cross-axios ăn theo hướng main-axios */ 
+
+            
+            /* 
+            main-axios
+            flex-direction: row; (giá trị mặc định)  row: main axios nằm ngang
+            cross-axios nằm dọc => 2 trục này luôn vuông góc với nhau
+            
+            ^ flex-column: thì main -axios : nằm dọc
+            -> cross-axios nằm ngang
+            - main-axios: sẽ có hai thuộc tính
+                +justify-content: ;
+                    giá trị
+                    +center :chính giữa
+                    +flex-start :sắp xếp từ đầu
+                    + flex-end :sắp xếp xuống cuối
+                    + space-around: mép đầu bằng 1/2 khoảng cách các item
+                    + space-beetween : ra giữa tính từ mép đầu
+                    + space-evely : đều
+            CROSS-AXIOS:
+                align-items
+                    + center: giữa
+                    + flex-start : xếp ở đầu
+                    + flet-end : xếp ở cuối
+                align-content: 
+                    dùng giống như justify-content nhưng ăn theo trục cross
+                    +center :chính giữa
+                    +flex-start :sắp xếp từ đầu
+                    + flex-end :sắp xếp xuống cuối
+                    + space-around: mép đầu bằng 1/2 khoảng cách các item
+                    + space-beetween : ra giữa tính từ mép đầu
+                    + space-evely : đều
+
+            
+            */
+        }
+        .item{
+            width: 160px;
+            height: 100px;
+        }
+        .item1{
+            background-color: blue;
+            /* flex:1; */
+            /* width: 50px; */
+            /* display: flex;
+            justify-content:center; */
+        }
+        .item2{
+            background-color: red;
+            /* width: 100px; */
+            /* flex:2; */
+        }
+        .item3{
+            background-color: violet;
+            /* flex:3; */
+            /* flex: 1; */
+        }
+        .item4{
+            background-color: yellow;
+        }
+        .item5{
+            background-color: green;
+        }
+        .item6{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Flex-box: giúp tạo ra các layout theo ý muốn
+        flex-container : khối cha
+        flex-item : khối con
+        flex-direction: row; (giá trị mặc định)nằm ngang
+        flex-collom : nằm dọc
+
+    -->
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+
+    </div>
+    
+</body>
+</html>
