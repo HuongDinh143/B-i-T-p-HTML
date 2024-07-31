@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .responsive{
+            background-color: red;
+        }
+        /* desktop frist */
+        /* @media only screen and (max-width: 1200px){
+            .responsive{
+                background-color:green;
+            }
+        }
+        @media only screen and (max-width: 992px){
+            .responsive{
+                background-color: orange;
+            }
+        }
+        @media only screen and (max-width: 768px){
+            .responsive{
+                background-color: yellow;
+            }
+        } */
+         /* mobile frist */
+         @media only screen and (min-width: 640px){
+            .responsive{
+                background-color: violet;
+            }
+            
+         }
+         @media only screen and (min-width: 992px){
+            .responsive{
+                background-color:tomato;
+            }
+            
+         }
+            
+        
+    </style>
+</head>
+<body>
+    <!-- 
+    
+    RWD - responsive web design: Thiết kế trang web tương thich với các màn hình khác nhau
+    (máy tính, máy tính bảng, điện thoại)
+    Cách responsive
+    1. Các breakpoint (thông số)
+        320px-480px : màn hình cho các thiết bị smartphone nhỏ
+        480px-640px: smartphone vừa
+        640px-768px: tablet hỏ
+        768px-992px: tablet vừa
+        992px-1200px: tablet lớn
+        >1200px : màn hình máy tính
+
+    2. Thiết kế rwd theo kiểu mobile frist (ưu tiên điện thoại trước)
+        Tức là sẽ code trên giao điện điện thoại trước sau đó sẽ code trên các thiết bị
+        máy tính bảng và desktop
+    3. Thiết kế rwd theo kiểu máy destop frist (ưu tiên máy tính trước)
+        tức là sẽ code trên giao diện máy tính trước, sau đó mình sẽ đi thiết kế tương 
+        thích với các màn hình máy tính bảng rồi xuống điện thoại sau.
+        @media screen and (max-width:)
+
+    -->
+        <div class="responsive">
+            responseive
+        </div>
+</body>
+</html>

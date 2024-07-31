@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var age = 15;
+        // console.log("age",age);
+        // var age =20;
+        // console.log("Xin chào");
+        // console.log(age)
+       
+        // {
+        //     let age = 15;
+        //     // chỉ hoạt động trong scope{}
+        //     console.log("age", age);
+        // }
+        let a = "15";
+        let b = 15;
+        b+=6
+        b=b+6
+        console.log(1111, b);
+        // console.log(111111, a%b);
+        // let name = "Hoa";
+        // console.log(name +3);
+        console.log(a!=b);
+        console.log(a!==b);
+
+        let c = 9;
+        // console.log(c++); //9
+        // console.log(++c); //11
+        let result = c++ + ++c + c-- + c;
+        // 9 + 11 + 11+ 10
+        console.log(result );
+        if(0 || 0){
+            console.log("1 trong hai cái đúng!");
+        }
+        if(5>4 && 6>7){
+            console.log("1 trong hai cái đúng!");
+        }
+
+        console.log(111, 1||2||3||4||0,"hhh");
+        console.log(111, 1&&2&&3&&4&&0,"hhh");
+        let isCheck = confirm("Bạn đủ 18 tuổi chưa?")
+        console.log("isCheck: " ,isCheck);
+        if(isCheck){
+            console.log("bạn đủ tuổi làm căn cước công dân chưa");
+        } else{
+            console.log(0);
+        }
+        let age = prompt("Mời bạn nhập tuổi");
+        let monHoa= + prompt("Mời nhập hóa");
+        let monVan= + prompt("Mời nhập Văn");
+        let monToan= + prompt("Mời nhập toan");
+
+        let tb = (monHoa+monVan+monToan)/3;
+        console.log("điêm trung bình", tb);
+
+    </script>
+</body>
+</html>

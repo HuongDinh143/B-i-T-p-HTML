@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../image/band.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+.header{
+    display: flex;
+    background-color: #413d3d;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+.navbar{
+    display: inline-block;
+}
+
+
+.navbar ul{
+    /* background-color: rgb(153, 140, 140); */
+    list-style: none;
+    display: flex;
+    /* position: fixed; */
+}
+.navbar ul li a{
+    color:white;
+    text-decoration: none;
+    margin: 10px;
+}
+.navbar a{
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.icon i{
+    float: right;
+    color: white;
+    margin-right: 10px;
+}
+.fotter{
+    color: white;
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    left: 20%;
+}
