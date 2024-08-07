@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // khai báo mảng chứa danh sách sinh viên
+        let students = [];
+        console.log(students);
+        // thêm phần tử vào trong mảng:
+        /*
+            1. dùng push thêm phần tử vào cuối
+            2. dùng unshift()
+        */
+        students.push("hoa", "hồng");
+        students.unshift("nam");
+        students.unshift("minh thu");
+        // thêm vào vị trí bất kỳ
+        students.splice(2, 2, "huệ");
+        console.log(students);
+        // console.log(students[0]);
+        // console.log(students[1]);
+        // console.log(students[2]);
+
+        for( let i = 0 ; i<students.length; i++){
+            // console.log("1",students[i]); 
+        }
+        for (let a of students) {
+            console.log(a);
+        }
+
+        let numbers = [1, 3, 5];
+        for(let i =0; i<numbers.length; i++){
+            document.write(numbers[i]);
+            document.write("<br>");
+        }
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Nhập vào số n nguyên dương
+     tính tổng các số chia hết cho 3 mà không chia hết cho 5 của các số từ 1 đến n
+
+      -->
+     <script>
+        let n = Number(prompt("Mời bạn nhập số nguyên dương n"));
+        // let i = 3;
+        let sum = 0;
+        for(let i=3; i<=n ; i += 3){
+            if(i%5 !== 0){
+                sum = sum + i;
+                console.log(i);  
+            }
+        }
+        
+
+        // kiểu tra số đấy nhân 3 chia số dư cho 5 khác không
+
+        // while (i<=n){
+        //     if(i%5 !=0){
+        //         console.log(i);
+                
+        //         sum +=i;
+        //         i +=3;
+        //     }
+        // }
+        console.log(`Tổng các số chia hết cho 3 và ko chia hết cho 5 từ 0 đến ${n} là : ${sum}`);
+        
+
+     </script>
+</body>
+</html>

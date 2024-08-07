@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai1</title>
+</head>
+<body>
+    <script>
+        /*
+        Viết chương trình khai báo 1 mảng gồm các phần tử bất kỳ, 
+        Tiến hành in ra các phần tử là số nguyên trong mảng, 
+        nếu không có số nguyên nào thì hiển thị “Trong mảng không tồn tại số nguyên” lên màn hình console.
+        */
+       let arr1 = ["hoa", "trang", 1];
+       var interger = [];   
+       for (let a in arr1) {
+            if(Number.isInteger(arr1[a])){
+            console.log(arr1[a]);
+            interger.push(arr1[a]);
+        }
+        
+        }
+        
+        let x = interger.length;
+        console.log(x);
+        
+        
+        if( x > 0){
+            console.log("số nguyên trong mảng là: ", interger); 
+            
+        }else{
+            console.log("trong mảng không tồn tại số nguyên");  
+        }
+        
+       
+        
+       
+       
+    </script>
+</body>
+</html>

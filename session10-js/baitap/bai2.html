@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Viết chương trình khai báo mảng có sẵn gồm nhiều phần tử, 
+    yêu cầu người dùng nhập vào giá trị bất kỳ và tìm kiếm trong mảng. 
+    In ra vị trí của phần tử trong mảng nếu tìm thấy, nếu không thì in 
+    “phần tử không tồn tại” lên màn hình console.
+     -->
+    <script>
+        let arr2 = ["hoa", "lan", "minh", "trang"];
+        let n = prompt("mời bạn nhập giá trị cần tìm kiếm");
+        let value=[];
+        for (let i in arr2) {
+            if(arr2[i] == n){
+                value.push(i);
+            }
+        }
+        let x = value.length;
+        
+        if(x > 0){
+            console.log(`Vị trí của ${n} trong mảng là ${value}`);
+        }else{
+            console.log(`Trong mảng không có ${n}`);
+            
+        }
+
+    
+    </script>
+</body>
+</html>

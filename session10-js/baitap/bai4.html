@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Viết chương trình yêu cầu nhập vào hai số nguyên dương a và b, 
+    lưu các số chia hết cho b trong khoảng từ 1 đến a hoặc các số 
+    chia chia hết cho a trong khoảng từ 1 đến b vào một mảng và in mảng 
+    đó ra màn hình console.
+
+    tạo array rỗng, sau đó push vào
+    -->
+    <script>
+        let a = Number(prompt("Mời bạn nhập vào số nguyên dương a"));
+        let b = Number(prompt("Mời bạn nhập vào số nguyên dương b"));
+        let value = [];
+
+        for(let x = 0; x < b; x++){
+            if(a%x==0){
+            value.push(x)
+            }
+        }
+        
+        for(let i = 0; i < a; i++){
+            if(b%i==0){
+            value.push(i)
+            }
+        }
+
+        
+        console.log(`
+        Các số chia hết cho b trong khoảng từ 1 đến ${a} 
+        hoặc các số  chia chia hết cho a trong khoảng từ 1 đến ${b} là ${value}`);
+        
+    </script>
+</body>
+</html>
