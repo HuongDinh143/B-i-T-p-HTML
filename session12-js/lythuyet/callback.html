@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // console.log("1111");
+        // setTimeout(() => {
+        //     console.log("2222");
+
+        // }, 2000);
+        // console.log("333");
+        let sdt;
+        function xinSdt(callback) {
+            // nhật gọi cho hương xin số tùng;
+            console.log("nhật gọi cho hương xin số tùng");
+            console.log("Huong bảo đợi tý");
+            setTimeout(() => {
+                sdt = 11125485
+                callback(sdt);
+            }, 3000);
+
+        }
+        // function Nhật gọi cho tùng khi đã có số
+        function goiKhiCoSo(phone) {
+
+            console.log(`Nhật gọi cho tùng theo ${phone}`);
+        }
+        xinSdt(goiKhiCoSo)
+
+
+
+
+    </script>
+</body>
+
+</html>

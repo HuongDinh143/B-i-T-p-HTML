@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    Bài 5: Cho người dùng nhập vào chuỗi kí tự. V
+    iết hàm kiểm tra xem tần suất xuất hiện của mỗi ký tự và in ra chúng
+    Input: “Hello World”
+    ký tự H xuất hiện 1 lần, 
+    ký tự e xuất hiện 1 lần ....
+ -->
+    <script>
+        let text = prompt("Mời bạn nhập vào đoạn text")
+        let arr1 = [...text];
+        let countArray = [];
+
+        function dem(arr) {
+            for (i = 0; i < arr.length; i++) {
+                let found = false;
+                for (j = 0; j < countArray.length; j++) {
+                    if (countArray[j][0] === arr[i]) {
+                        countArray[j][1]++;
+                        found = true;
+                        break;
+                    }
+                }
+                if (!found) {
+                    countArray.push([arr[i], 1]);
+                }
+
+
+            } return countArray;
+
+        }
+        let char = dem(arr1);
+        for (i = 0; i < char.length; i++) {
+            console.log(`ký tự ${char[i][0]} xuất hiện ${char[i][1]} lần`);
+
+        }
+
+    </script>
+</body>
+
+</html>

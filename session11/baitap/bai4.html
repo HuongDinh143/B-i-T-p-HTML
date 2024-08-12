@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Bài 4: Viết một chương trình nhập vào một chuỗi và chuyển các ký tự chữ thường 
+    trong chuỗi vừa nhập sang thành dạng chữ hoa.Các kí tự hoa chuyển thành chữ thường.
+    Ví dụ: nếu bạn nhập vào chuỗi 'Keep Calm And Code On' kết quả của chương trình là 'kEEP cALM aND cODE oN'.
+    -->
+
+    <script>
+        let text = prompt("Mời bạn nhập vào chuỗi ký tự");
+        let arr = text.split("");
+        let text1="";
+        console.log(arr);
+        for(i=0; i<arr.length; i++){
+            if(arr[i]===arr[i].toUpperCase()){
+                // arr[i]=arr[i].toLowerCase
+                text1+=arr[i].toLowerCase();
+            }else{
+                text1+=arr[i].toUpperCase();
+            }
+        }
+        console.log(text1);
+        
+
+    </script>   
+</body>
+</html>

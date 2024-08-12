@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Các thuật toán sắp xếp
+    1. buble sort(): thuật toán sắp xếp nổi bọt
+    
+    -->
+    <script>
+        let numbers = [3, 7, 8, 1, 5, 6];
+        let count = 0;
+        for(let i = 0; i < numbers.length -1; i++){
+            for(j = 0; j<numbers.length - i - 1; j++){
+                // đi so sánh hai phần tử liền kề, nếu phần tử j>j+1
+                // tiến hành đổi chỗ
+                if(numbers[j]>numbers[j+1]){
+                    //tiến hành đi đổi chỗ
+                    let temp = numbers[j];
+                    numbers[j] = numbers[j+1];
+                    numbers[j+1] = temp;
+                    // [numbers[j], numbers[j+1]]=[numbers[j+1], numbers[j]]
+                }
+            }
+        }
+        console.log("mảng sau khi sắp xếp", numbers);
+        
+
+    </script>
+</body>
+</html>

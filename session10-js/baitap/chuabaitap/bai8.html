@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Viết chương trình khai báo mảng số nguyên bất kỳ, 
+    in ra tất cả các phần tử xuất hiện từ hai lần trở 
+    lên trong mảng đã khai báo.
+
+    input: [1, 2, 3, 1, 2, 4,, 1], 
+    output: [1, 2]
+     -->
+    <script>
+
+        /*
+        tạo một mảng số nguyên bất kỳ
+        input : let numbers = [3, 4, 5, 6, 3, 4, 5, 6, 8, 9, 5, 6]
+        */
+        let numbers1 = [3, 4, 5, 6, 3, 4, 5, 6, 8, 9, 5, 6];
+        let numbers= numbers1.sort((a, b)=> a-b);
+        console.log(numbers);
+        let result = [];
+        for(let i =0; i< numbers.length; i++){
+            if(numbers[i] == numbers[i+1]){
+                // trước khi push vào kiểm tra xem có trong  result
+                let check = result.indexOf(numbers[i]);
+                //indexOf trả về -1 hoặc vị trí phần tử trong mảng
+                if (check == -1){
+                    result.push(numbers[i]);
+                }
+
+            }
+        }
+        console.log(result);
+        
+    </script>
+</body>
+</html>

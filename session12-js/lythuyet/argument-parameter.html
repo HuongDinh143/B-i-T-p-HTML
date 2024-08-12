@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // khai báo hàm tính tổng a và b
+        function sum(param1, param2) {
+            console.log(`Tổng của ${param1} và ${param2} là: ${param1 + param2}`);
+
+        }
+        sum(5, 7);
+        //param1, param2 là thâm số
+        // 5, 7 là đối số
+        // viết chương trình nhập vào 2 số a và b
+        // tính tổng các số từ a đến 
+        function tinhTong(a, b) {
+            let sum = 0
+            for (let i = a; i <= b; i++) {
+                sum += i;
+            }
+            console.log("tổng 2 số", sum);
+
+        }
+        tinhTong(1, 10);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    Bài 2: Viết hàm kiểm tra xem số người dùng nhập vào có phải là số nguyên tố hay không?
+    (số nguyên tố là số nguyên dương chỉ có 2 ước là 1 và chính nó).
+    số nguyên tố là số nguyên có 2 ước là 1 và chính nó bắt đầu từ số 2
+    Viêt hàm: viets hàm duyệt từ 2 đến số đó xem xem có chia hết cho số nào không
+    nếu chia hết không phải số nguyên tố
+    nếu không thì là số nguyên tố
+    -->
+    <script>
+        function isPrime(a) {
+            if (a <= 1) {
+                return `${a} không phải là số nguyên tố`;
+            }
+
+            for (i = 2; i < Math.sqrt(a); i++) {
+                if (a % i === 0) {
+                    return `${a} không phải là số nguyên tố`;
+                }
+            } return `${a} là số nguyên tố`;
+        }
+
+        let a = Number(prompt("Mời bạn nhập vào số bất kỳ"))
+        console.log(isPrime(a));
+
+
+
+    </script>
+</body>
+
+</html>

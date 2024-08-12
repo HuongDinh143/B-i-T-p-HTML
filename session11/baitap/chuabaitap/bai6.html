@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Khởi tạo 1 đoạn text
+        Chuyển chữ cái đầu thành in hoa
+        in ra màn mình
+        input : học lập trình
+        out Học Lập Trình
+        input: chào buổi sáng
+        output : 
+        b1: từ chuỗi text chuyển sang mảng (split(" "));
+        b2 duyệt vòng lặp để lấy ra tằng phần tử
+        b3 
+
+         -->
+
+    <script>
+        let string = "chào buổi sáng";
+        let arr = string.split(" ");
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+            arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1);
+
+        }
+        console.log(arr.join(" "));
+
+
+
+
+
+    </script>
+</body>
+
+</html>

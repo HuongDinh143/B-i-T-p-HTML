@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [1, 1, 1, 1, 2, 2, 1, 4, 5, 4, 4, 7, 8, 4, 5];
+        let result = [];
+        for(let i = 0; i<array.length -1; i++){
+            let count = 0;
+            for (let j = i+1; j < array.length; j++) {
+                if(array[j]==array[i]){
+                    count++;
+
+                }
+                
+            }
+            if(count>0){
+                // kiểm tra xem có trong result hay chưa
+                // nếu chưa có thì push vào
+                if(!result.includes(array[i])){
+                    // nếu tồn tại thì trả về true => không push
+                    result.push(array[i])
+                }
+                    
+                
+            }
+        }
+        console.log(result);
+        
+    </script>
+</body>
+</html>

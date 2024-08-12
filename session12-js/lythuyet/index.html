@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    1. function bình thường (declaration):
+        + cách khai báo
+
+        + Cách dùng : 
+            - hàm được thực thi khi gọi hàm
+    2. arrow function (hàm mũi tên)
+        + cách khai báo
+        + cách dùng
+    
+    -->
+    <script>
+        sayHello();
+        function sayHello() {
+            console.log("Xin chào");
+
+        }
+        sayHello();// gọi hàm
+
+        // arrow function
+
+        let result = () => {
+            console.log("arrow function");
+        }
+        result();
+        // hàm ẩn danh
+        let sum = function () {
+            console.log("hàm ẩn danh");
+
+        }
+        sum();
+        //4. hàm IIFE (indemlity invoked function expression)
+        (function sayHello() {
+            console.log("function IIFE");
+
+        })();// hay dùng để làm thư viện
+
+        (function sayHello() {
+            console.log("function IIFE 1111");
+
+        })();// hay dùng để làm thư viện
+
+        // tham số đối số trong hàm
+
+        // đối số: khi gọi hàm truyền giá trị vào
+        //tham số: khi khai báo hàm khởi tạo ()
+
+
+    </script>
+
+</body>
+
+</html>
