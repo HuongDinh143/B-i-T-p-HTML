@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Viết chương trình khai báo mảng gồm nhiều chuỗi bất kỳ, 
+        yêu cầu người dùng nhập vào 1 chuỗi bất kỳ. Xây dựng hàm có 2 tham số là 1 mảng và 1 chuỗi, 
+        kết quả trả về là tất cả các phần tử trong mảng có chứa chuỗi vừa nhập. In kết quả trả về ra màn hình.
+    
+    -->
+    <script>
+        let arr = ["apple", "banana", "grape", "pineapple", "orange", "peach", "grapefruit", "banana",];
+        function findStringsWithSubstring(arr, substring) {
+            let result = [];
+            for (let i = 0; i < arr.length; i++) {
+
+                if (arr[i].includes(substring)) {
+                    result.push(arr[i]);
+
+                }
+            } return result;
+
+        }
+        let userInput = prompt("Nhập vào một chuỗi");
+        let result = findStringsWithSubstring(arr, userInput);
+        console.log("Các chuỗi trong mảng có chứa chuỗi bạn vừa nhập:");
+        console.log(result);
+
+    </script>
+</body>
+
+</html>

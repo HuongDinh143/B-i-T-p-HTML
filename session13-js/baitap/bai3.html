@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    Viết chương trình yêu cầu người dùng nhập vào số lượng sinh viên 
+    và thông tin của mỗi sinh viên. Đối tượng sinh viên chỉ có 2 thuộc 
+    tính id và name. Tất cả sinh viên sẽ được lưu vào một mảng, in mảng 
+    các sinh viên ra màn hình.
+    nhập số lượng
+    dùng for duyệt
+     -->
+    <script>
+        class Student {
+            constructor(id, name) {
+                this.id = id;
+                this.name = name;
+            }
+        }
+
+        function std(a) {
+            let students = [];
+            for (let i = 0; i < a; i++) {
+                let id = prompt("Mời bạn nhập id")
+                let name = prompt("Mời bạn nhập name");
+                students.push(new Student(id, name));
+            } return students;
+
+        }
+        let a = prompt("Mời bạn nhập số lượng sinh viên");
+        console.log(std(a));
+
+
+
+    </script>
+</body>
+
+</html>

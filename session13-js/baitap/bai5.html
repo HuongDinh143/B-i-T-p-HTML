@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    Viết chương trình khai báo mảng gồm nhiều đối tượng Book 
+    có hai thuộc tính author và name. 
+    Yêu cầu người dùng nhập tên Auth từ bàn phím thông qua hàm prompt(). 
+    Sau đó tiến hành tìm kiếm thông tin sách theo tác giả. 
+    Nếu tìm thấy thì in ra ngoài màn hình đối tượng Book tìm được, 
+    nếu không tìm thấy thì in ra “Không tìm thấy sách”
+     -->
+    <script>
+
+        class Book {
+            constructor(author, name) {
+                this.author = author;
+                this.name = name;
+            }
+
+        }
+
+        let book1 = new Book("J.R.R. Tolkien", " Chúa tể của những chiếc nhẫn");
+        let book2 = new Book("Khaled Hosseini", "Người đua diều ");
+        let book3 = new Book("J.K. Rowling", "Harry Potter và Hòn đá phù thủy ");
+        let book4 = new Book("Kurt Vonnegut", " Lò Sát Sinh Số Năm ");
+        let book5 = new Book("C.S. Lewis", "Sư Tử, Phù Thủy Và Cái Tủ Quần Áo")
+        let books = [];
+        books.push(book1, book2, book3, book4, book5);
+
+        // console.log(books);
+        function findBook(author) {
+            for (i = 0; i < books.length; i++) {
+                let result = "";
+                for (const key in books[i]) {
+                    if (author == books[i].author) {
+                        result += books[i].name;
+                    }
+                } return result;
+            }
+        }
+        let author = prompt("Mời bạn nhập tên tác giả");
+        console.log(findBook(author));
+
+
+
+
+
+    </script>
+</body>
+
+</html>

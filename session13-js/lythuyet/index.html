@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // tạo đối tượng
+        // Cách 1: dùng let, var, const
+        let student = {};
+        // cách 2
+        let cat = new Object();
+        // cách 3
+        // function Student(name, age, id, address) {
+        //     this.name = name;
+        //     this.age = age;
+        //     this.id = id;
+        //     this.address = address;
+
+        // }
+        // let std1 = new Student("Minh Thu", 20, 112, "Hà Nội")
+        // console.log(std1);
+
+        //cách 4: dùng class
+        class StudentName {
+            constructor(name, age, id, address, gender) {
+                this.name = name;
+                this.age = age;
+                this.id = id;
+                this.address = address;
+                this.gender = gender;
+            }
+            // Khai báo định nghĩa các phương thức
+            sayHello = () => {
+                console.log(("Xin chào"));
+                getName = () => {
+                    return this.name;
+                }
+                setName = () => {
+                    this.name = name;
+                }
+
+            }
+        }
+        let std3 = new StudentName("Lan", 22, 114, "HCM", "Nữ");
+        std3.setName = ("Lan Phương");
+        console.log(std3.getName);
+
+
+
+    </script>
+</body>
+
+</html>

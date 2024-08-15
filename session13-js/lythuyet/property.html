@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            name: "Hồng Lan",
+            age: 20,
+            address: "Hà Nội",
+            sayHello: () => {
+
+            },
+            name: "thu ha"
+
+        }
+        student.gender = "male"
+        student["email"] = "lan@gmail.com"
+        console.log(student);
+        // in ra giá trị thuộc tính
+        for (const key in student) {
+            console.log(key);
+
+            console.log(student[key]);
+
+        }
+        student.name = "Lan Phương";
+        delete student.age
+        console.log(1111, student);
+
+        let array = [0, 1, 2, 3, 5];
+        //destructoring
+        let [number1, number2] = array;
+        console.log(array);
+
+
+
+    </script>
+</body>
+
+</html>

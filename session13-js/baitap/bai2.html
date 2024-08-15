@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Viết chương trình khai báo đối tượng information 
+     có các thuộc tính id, name, phone, address. 
+     Tiến hành xóa thuộc tính address và thêm thuộc tính email 
+     cho đối tượng và in đối tượng ra màn hình.
+     -->
+    <script>
+        const information = {
+            id: 112,
+            name: "Hương",
+            phone: "090-1652",
+            address: "Tokyo"
+        }
+        delete information.address;
+        information.email = "dinhthuhuong143@gmail.com"
+
+        for (const key in information) {
+            document.write(information[key]);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    Cho một mảng products chứa các đối tượng product gồm các thông tin sau: 
+    id, product_name, price. Xây dựng hàm để sắp xếp danh sách products tăng dần 
+    và in ra mảng đã được sắp xếp ra ngoài màn hình
+    -->
+    <script>
+        let products1 = [
+            { id: 1, product_name: "iphone 12", price: 20000000 },
+            { id: 2, product_name: "iphone 11", price: 10000000 },
+            { id: 3, product_name: "samsung note 10", price: 500000000 }
+        ]
+        console.log(typeof products1[1].price);
+
+        function sapXep(products) {
+            for (i = 0; i < products.length - 1; i++) {
+                for (j = i + 1; j < products.length; j++) {
+                    if (products[i].price > products[j].price) {
+                        let temp = products[i];
+                        products[i] = products[j];
+                        products[j] = temp;
+                    }
+                }
+
+            } return products;
+        }
+        console.log(sapXep(products1));
+
+
+    </script>
+</body>
+
+</html>

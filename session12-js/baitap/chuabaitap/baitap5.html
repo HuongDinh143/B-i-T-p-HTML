@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    Bài 5: Cho người dùng nhập vào chuỗi kí tự. V
+    iết hàm kiểm tra xem tần suất xuất hiện của mỗi ký tự và in ra chúng
+    Input: “Hello World”
+    ký tự H xuất hiện 1 lần, 
+    ký tự e xuất hiện 1 lần ....
+ -->
+    <script>
+        let texts = "hello world";
+        let arr = texts.split("");
+        let result = [...new Set(texts)];// tạo array có các phần tử không trùng nhau
+        console.log(1111, result);
+        for (let i = 0; i < result.length; i++) {
+            let count = 0;
+            for (let j = 0; j < arr.length; j++) {
+                if (result[i] == arr[j]) {
+                    count++
+                }
+            } console.log(`ký tự ${result[i]}xuất hiện ${count} lần`);
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
