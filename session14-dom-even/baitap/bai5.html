@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Viết chương trình khai báo mảng names chứa họ tên của người dùng, 
+     tiến hành in tất cả các tên trong mảng lên danh sách trên màn hình trình duyệt.
+     -->
+    <script>
+        let names = ["Nguyễn Văn A", "Vũ Thị B", "Nguyễn Minh C"];
+        let ul = document.createElement("ul");
+        let list = names.forEach((item) => {
+            let li = document.createElement("li");
+            li.innerHTML = item;
+            ul.appendChild(li);
+        })
+        document.body.appendChild(ul);
+
+    </script>
+</body>
+
+</html>

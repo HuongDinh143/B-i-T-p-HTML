@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    Tạo một đối tượng Product đại diện cho một sản phẩm, với các thuộc tính như name (tên sản phẩm), price (giá sản phẩm), 
+    và quantity (số lượng trong giỏ hàng).
+
+Tạo một mảng shoppingCart chứa nhiều đối tượng Product để đại diện cho giỏ hàng mua sắm.
+
+Viết một hàm addToCart(productName, price, quantity) để thêm một sản phẩm vào giỏ hàng. Nếu sản phẩm đã tồn tại trong giỏ hàng, 
+chỉ cập nhật số lượng; nếu không, thêm sản phẩm mới vào giỏ hàng.
+
+Viết một hàm removeFromCart(productName) để xóa một sản phẩm khỏi giỏ hàng.
+
+Viết một hàm calculateTotal() để tính tổng giá trị của giỏ hàng dựa trên giá sản phẩm và số lượng.
+
+Viết một hàm displayCart() để hiển thị thông tin chi tiết của giỏ hàng, bao gồm tên sản phẩm, giá, số lượng, 
+và tổng giá trị cho từng sản phẩm.
+
+Viết một hàm clearCart() để xóa tất cả sản phẩm khỏi giỏ hàng.
+
+Gợi ý:
+
+Khi thêm sản phẩm vào giỏ hàng, kiểm tra xem sản phẩm đã tồn tại chưa sử dụng find() hoặc findIndex().
+
+Khi tính tổng giá trị giỏ hàng, lặp qua từng sản phẩm và tính tổng giá trị cho mỗi sản phẩm.
+
+Sử dụng console.log() để hiển thị thông tin trong trình duyệt console.
+     -->
+    <h1>Shopping Cart</h1>
+    <script src="./bai10.js"></script>
+    <br>
+    <button onclick="addToCart()">Mua hàng</button><br>
+    <button onclick="removeFromCart()">xóa</button>
+
+</body>
+
+</html>

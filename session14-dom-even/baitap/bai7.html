@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            border-radius: 5px;
+            border-style: none;
+            background: #64d768;
+            padding: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- thêm hàng mới vào bảng khi bấm nút add row -->
+    <table id="table1" border="1px">
+        <tr>
+            <td>Cell 1 row 1</td>
+            <td>Cell 2 row 1</td>
+            <td>Cell 3 row 1</td>
+        </tr>
+    </table>
+    <button onclick="addRow()">add row</button>
+    <script>
+        function addRow() {
+            let table = document.getElementById("table1");
+            let row = table.insertRow();
+
+
+            for (let i = 0; i < 3; i++) {
+                let cell = row.insertCell();
+                cell.innerHTML = `Cell ${i + 1} row ${table.rows.length}`
+            }
+        }
+    </script>
+</body>
+
+</html>

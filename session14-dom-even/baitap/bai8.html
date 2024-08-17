@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- xóa hàng trong bảng -->
+    <table id="table1" border="1px">
+
+    </table>
+    <button id="addRow" onclick="addRow()">add row</button>
+    <script>
+        function addRow() {
+            let table = document.getElementById("table1");
+            let row = table.insertRow();
+
+
+            for (let i = 0; i < 3; i++) {
+                let cell = row.insertCell();
+                cell.innerHTML = `Cell ${i + 1} row ${table.rows.length}`;
+            }
+            // Thêm cột nút xóa
+            let deleteCell = row.insertCell();
+            let deleteButton = document.createElement("button");
+            deleteButton.className = "delete";
+            deleteButton.innerHTML = "delete";
+            deleteButton.style.backgroundColor = "red";
+            deleteButton.style.border = "none";
+            deleteButton.style.color = "white"
+            deleteButton.onclick = function () {
+                row.remove();
+            }
+            deleteCell.appendChild(deleteButton);
+
+        }
+    </script>
+
+</body>
+
+</html>

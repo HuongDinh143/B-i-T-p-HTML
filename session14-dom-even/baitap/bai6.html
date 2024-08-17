@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background: #64d768;
+            border-style: none;
+            padding: 6px;
+            border-radius: 5px;
+        }
+
+        input {
+            border-radius: 7px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input id="inputItem" type="text">
+    <button onclick="addItem()">add item</button>
+
+    <script>
+        let items = [];
+        let ul = document.createElement("ul");
+        document.body.appendChild(ul);
+
+        function addItem() {
+            let inputElement = document.getElementById("inputItem");
+            let newItem = inputElement.value;  // Lấy giá trị từ input
+            items.push(newItem);
+
+            let li = document.createElement("li");
+            li.innerHTML = newItem;
+            ul.appendChild(li);
+            inputElement.value = "";
+        }
+    </script>
+
+</body>
+
+</html>

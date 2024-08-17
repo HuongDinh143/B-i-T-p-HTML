@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: inline;
+        }
+
+        .bt {
+            background: #64d768;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tạo giao diện như hình, mỗi khi bấm vào nút Edit thì tên người dùng tương ứng được hiển thị lên ô input, 
+     sau khi tiến hành chỉnh sửa và ấn nút Edit item thì danh sách được cập nhật.
+     -->
+    <input id="inputName" type="text">
+    <button id="button1" onclick="editItem()">Edit item</button>
+    <ul>
+
+        <li>Nguyễn văn A <button class="bt" onclick="loadInfo()">Edit</button></li>
+
+        <li>Vũ Thị B <button class="bt" onclick="loadInfo()">Edit</button></li>
+
+        <li>Nguyễn Minh C <button class="bt" onclick="loadInfo()">Edit</button></li>
+
+    </ul>
+    <script>
+        let currentEditIndex = -1;
+        function loadInfo(button) {
+            let li = document.querySelectorAll("li");
+            let nameEdit = [];
+            for (i = 0; i < 3; i++) {
+                let name = li[i].innerText.slice(0, -4);
+                nameEdit.push(name);
+            }
+
+            document.getElementById("inputName").value = nameEdit;
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

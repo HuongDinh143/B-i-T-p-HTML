@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            background: #80c2fd;
+            border-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Xây dựng giao diện gồm 1 nút bấm và 1 dòng chữ, 
+     khi ấn vào nút thì dòng chữ sẽ thay đổi style của dòng chữ.
+     -->
+    <h1>This text is optional</h1>
+    <button onclick="pressHideText()">Press to say hide text</button>
+    <script>
+        function pressHideText() {
+            let hideText = document.querySelector("h1")
+            console.log(hideText);
+            // hideText.setAttribute("style", "color:red; background-color:yellow")
+            hideText.style.color = "red";
+            hideText.style.backgroundColor = "yellow"
+        }
+
+
+    </script>
+
+</body>
+
+</html>
