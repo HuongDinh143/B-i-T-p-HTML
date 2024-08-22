@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            border-radius: 10px;
+            padding: 5px;
+            border: 1px solid
+        }
+
+        button {
+            border: none;
+            border-radius: 5px;
+            border: none;
+            background: #64d768;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="student" type="text">
+    <button id="btn" onclick=" addStudent()">Add item</button>
+    <ul id="list">
+        <!-- <li>1</li>
+        <li>2</li>
+        <li>3</li> -->
+    </ul>
+
+
+    <!-- các bước làm
+     B1: khi nhấn vào button add item sẽ tạo event
+     B2: Lấy giá trị của người dùng nhập
+     B3* tạo mảng để chứa danh sách học sinh
+     B4. tạo đối tượng học sinh
+        bao gồm các thuộc tính{
+        name:"",
+        id:""} 
+    B5: push đối tượng học tinh vào mảng chứa học sinh
+    B6 tạo hàm render ra giao diện
+    -->
+    <script>
+        let students = JSON.parse(localStorage.getItem("students")) || [];
+        let flag = -1;
+        function addStudent() {
+            // lấy giá trị người dùng nhập
+            let valueInput = document.getElementById("student").value;
+            console.log(valueInput);
+
+
+            let student = {
+                name: valueInput,
+                id: Math.floor(Math.random() * 999) + new Date().getMilliseconds(),
+            }
+            if (flag != -1) {
+                // thực hiện edit
+                students[flag] = { ...student, id: students[flag].id };
+                flag = -1;
+                document.getElementById("btn").innerHTML = "Add Item"
+                document.getElementById("student").value = "";
+                renderStudent();
+                return;
+            }
+
+            students.push(student);
+            localStorage.setItem("students", JSON.stringify(students))
+            // goi hàm renderStudent
+            renderStudent();
+            document.getElementById("student").value = "";
+
+        }
+
+        function renderStudent() {
+            let html = "";
+            for (let i = 0; i < students.length; i++) {
+                html += `<li>
+                    ${students[i].name}
+                    <button onclick="deleteStudent(${students[i].id})">Delete</button>
+                    <button onclick="editStudent(${students[i].id})">Edit</button>
+                    </li>`
+
+            }
+            document.getElementById("list").innerHTML = html;
+        }
+        function deleteStudent(idUser) {
+            let confirmDelete = confirm("Bạn có chắc chắn muốn xóa không");
+            if (confirmDelete) {
+                for (let i = 0; i < students.length; i++) {
+                    if (students[i].id == idUser) {
+                        students.splice(i, 1);
+                        //
+                        renderStudent()
+                    }
+                }
+            }
+
+        }
+        function editStudent(idUser, value) {
+            let index = students.findIndex((item) => {
+                return item.id == idUser;
+            })
+            // đưa giá trị lên ô input
+            document.getElementById("student").value = students[index].name;
+            // đổi giá trị nút button
+            document.getElementById("btn").innerHTML = "Edit item";
+            flag = index;
+        }
+    </script>
+
+</body>
+
+</html>

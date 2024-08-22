@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let str = "{([]())}{}("
+        let stack = [];
+        for (i = 0; i < str.length; i++) {
+            let char = str[i];
+            if (char == "{" || char == "[" || char == "(") {
+                stack.push(char)
+            } else if (char == "}" || char == "]" || char == ")") {
+
+                let last = stack.pop();
+                if (char == "{" && last != "}" || char == "[" && last != "]" || char == "(" && last != ")") {
+
+                    console.log("Chuỗi không cân bằng");
+
+                }
+
+            }
+        }
+        if (stack.length === 0) {
+            console.log("Chuỗi cân bằng");
+
+        } else {
+            console.log("Chuỗi không cân bằng");
+
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

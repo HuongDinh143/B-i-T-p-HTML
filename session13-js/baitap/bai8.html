@@ -91,21 +91,21 @@
             // ví dụ
             user.push(new User(111, "dinhthuhuong", "dinhthuhuong143@gmail.com", "dinhthuhuong143"));
 
-            function lognIn(user) {
+            function logIn(user) {
                 let email = prompt("Mời bạn nhập vào email");
                 let password = prompt("Mời bạn nhập password");
+
                 for (let i = 0; i < user.length; i++) {
                     if (email == user[i].email && password == user[i].password) {
-                        return alert(`Đăng nhập thành công id: ${user[i].id} user_name: ${user[i].user_name}`);
-                    } else {
-                        alert("Email hoặc mật khẩu không đúng, mời bạn nhập lại")
-                        return lognIn(user);
+                        return alert(`Đăng nhập thành công! ID: ${user[i].id}, Tên người dùng: ${user[i].name}`);
                     }
                 }
 
-            } console.log(lognIn(user));
+                alert("Email hoặc mật khẩu không đúng, mời bạn nhập lại");
+                return logIn(user);
+            }
 
-        }
+            console.log(logIn(user));
 
 
     </script>

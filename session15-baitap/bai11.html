@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="list">
+
+    </ul>
+    <button onclick="pre()">pre</button>
+    <button onclick="next()">next</button>
+    <script>
+
+        let numbers = [1, 2, 3, 4, 5];
+
+
+        function next() {
+            let item = numbers.shift();
+            numbers.push(item);
+            render();
+        }
+        function pre() {
+            let item = numbers.pop();
+            numbers.unshift(item);
+            render();
+        }
+        function render() {
+            let html = "";
+            for (let i = 0; i < numbers.length; i++) {
+                html += `<li><button>${numbers[i]}</button></li>`
+
+            }
+            document.getElementById("list").innerHTML = html
+        }
+        render();
+
+
+    </script>
+</body>
+
+</html>
